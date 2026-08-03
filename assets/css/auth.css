@@ -1,0 +1,126 @@
+body {
+    background: linear-gradient(135deg, #4a148c, #880e4f);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+}
+
+.login-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 40px 35px;
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.login-card .icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #4a148c, #880e4f);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 18px;
+}
+
+.login-card h1 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin: 0 0 4px;
+}
+
+.login-card p {
+    color: #7f8c8d;
+    margin: 0 0 24px;
+    font-size: 0.9rem;
+}
+
+.login-card input, .login-card select {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+}
+
+.login-card input:focus, .login-card select:focus {
+    outline: none;
+    border-color: #4a148c;
+}
+
+.login-card button {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #4a148c, #880e4f);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.login-card button:hover {
+    opacity: 0.9;
+}
+
+.alert-error {
+    background: #fdecea;
+    color: #c0392b;
+    border: 1px solid #f5c6cb;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+}
+
+.alert-ok {
+    background: #eafaf1;
+    color: #1e8449;
+    border: 1px solid #a9dfbf;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+}
+
+.alert-dev {
+    background: #fff8e1;
+    color: #7f6000;
+    border: 1px solid #ffe082;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 14px;
+    font-size: 0.9rem;
+    word-break: break-all;
+}
+
+.login-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    font-size: 0.85rem;
+}
+
+.login-links.centro {
+    justify-content: center;
+}
+
+.login-links a {
+    color: #4a148c;
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}

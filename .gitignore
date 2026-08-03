@@ -1,0 +1,15 @@
+# Credenciales y configuración local (NO subir)
+.env
+
+# Logs generados por la app
+storage/logs/
+
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp

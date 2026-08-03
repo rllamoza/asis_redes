@@ -1,0 +1,78 @@
+:root {
+    --bs-primary: #4361ee;
+    --bs-secondary: #3f37c9;
+    --bs-accent: #4895ef;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    background: linear-gradient(135deg, var(--bs-secondary), var(--bs-accent));
+    color: #fff;
+    padding: 24px 0;
+    margin-bottom: 28px;
+}
+
+.app-header h1 {
+    font-weight: 600;
+    margin: 0;
+}
+
+.app-header p {
+    margin: 4px 0 0;
+    opacity: 0.9;
+}
+
+.btn-person {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.btn-person:hover {
+    transform: translateY(-2px);
+}
+
+.btn-person .badge {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    font-size: 0.7rem;
+}
+
+.btn-loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.btn-loading:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin: -8px 0 0 -8px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 576px) {
+    .btn-person {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+}
